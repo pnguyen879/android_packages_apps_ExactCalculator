@@ -285,7 +285,7 @@ public class Calculator extends AppCompatActivity
         mMainCalculator = findViewById(R.id.main_calculator);
         mModeView = findViewById(R.id.mode);
         mFormulaText = findViewById(R.id.formula);
-        mDeleteButton = findViewById(R.id.del);
+        mDeleteButton = findViewById(R.id.backspace);
         mResultText = findViewById(R.id.result);
         mFormulaContainer = findViewById(R.id.formula_scroll_view);
         mEvaluator = Evaluator.getInstance(this);
@@ -681,7 +681,7 @@ public class Calculator extends AppCompatActivity
         final int id = view.getId();
         if (id == R.id.eq) {
             onEquals();
-        } else if (id == R.id.del) {
+        } else if (id == R.id.backspace) {
             onDelete();
         } else if (id == R.id.clr) {
             onClear();
@@ -752,7 +752,7 @@ public class Calculator extends AppCompatActivity
 
     @Override
     public boolean onLongClick(View view) {
-        if (view.getId() == R.id.del) {
+        if (view.getId() == R.id.backspace) {
             onClear();
             return true;
         }

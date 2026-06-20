@@ -213,7 +213,7 @@
       Content description for "del" button. Deletes single character. Should differ
       from desc_clr. [CHAR_LIMIT=NONE]
       -->
-    <string name="desc_del">delete</string>
+    <string name="desc_backspace">delete</string>
     <!-- Content description for "inv" button to show inverse functions. [CHAR_LIMIT=NONE] -->
     <string name="desc_inv_off">show inverse functions</string>
     <!-- Content description for "inv" button to hide inverse functions. [CHAR_LIMIT=NONE] -->
